@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+   
+    <style type="text/css">
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            width: 100%;
+            border: 1px solid white;
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 700px;
+      
+        }
+
+         label { 
+            width: 46%; 
+            float: center; 
+            margin: 0 20px 0 0;
+            padding:  0.2em;
+            word-wrap: break-word;
+         }
+
+         span { 
+            display: block; 
+            margin: 1px 0 4px; 
+            padding-right: 5px
+
+        }
+         input { 
+
+            width: 46%; 
+            border: 1px solid #000;
+            padding: 5px; 
+
+         }
+
+         h1  {
+              color: #4286f4;
+
+         }
+
+         .by {
+            width: 95.5%
+          }
+
+         .nice {
+            padding: 14px 40px;
+            width: 250px;
+          }
+
+        .dergo {
+          display: inline-block;
+          border-radius: 12px;
+          background-color: #1a75ff;
+          border: none;
+          color: #FFFFFF;
+          text-align: center;
+          font-size: 20px;
+          padding: 10px;
+          width: 290px;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 5px;
+
+      }
+
+        .dergo span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+
+        .dergo span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+        }
+
+        .dergo:hover span {
+          padding-right: 25px;
+        }
+
+        .dergo:hover span:after {
+          opacity: 1;
+          right: 0;
+        }
+
+        .back {
+          display: inline-block;
+          border-radius: 12px;
+          background-color: grey;
+          border: none;
+          color: #FFFFFF;
+          text-align: center;
+          font-size: 20px;
+          padding: 10px;
+          width: 290px;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 5px;
+        }
+
+        .back:hover {
+          background: grey;
+        }
+        .back span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+        .back span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          left: -20px;
+          transition: 0.5s;
+        }
+
+        .back:hover span {
+          padding-left: 25px;
+        }
+
+        .back:hover span:after {
+          opacity: 1;
+          left: 0;
+        }
+
+         .mb-3 {
+         
+          padding-right: 55%
+        }
+
+        h4 {
+        	margin-top: 3%;
+        	margin-bottom: 3%;
+        	color: #434344;
+        }
+
+        h5 {
+        	margin-top: 3%;
+        	margin-bottom: 3%;
+        	color: #434344;
+
+        }
+
+        .shpjegim {
+        	text-align: center;
+        	padding: 2%;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+    </style>
+</head>
+<body>
+
+   <div class="container">
+
+        <form>
+
+        <h1>Shto nj&euml; kontrat&euml; t&euml; re</h1>
+
+        <h4><strong>Prokurorimi:</strong></h4>
+
+        <label for="nr.p">
+               <span>Nr. rendor i prokurorimit</span>
+               <input id="nr.p" class="form-control bby" type="text" placeholder="Nr. rendor i prokurorimit" />
+        </label>
+        <label for="ll.p">
+               <span>Lloji i prokurorimit</span>
+               <input id="ll.p" class="form-control" type="text" placeholder="Lloji i prokurorimit" />
+        </label>
+
+        <br>
+
+        <label for="ap">Aktiviteti i prokurorimit </label>	
+               
+                <input  id="ap"  class="form-control by" type="text" placeholder="Aktiviteti i Prokurorimit" />
+        
+
+        <br>
+         
+        <h4><strong>Datat:</strong></h4>
+
+        <label for="diap">
+               <span>Data e inicimit t&euml; aktivitetit t&euml; prokurorimit</span>
+               <input id="diap" class="form-control" type="text" placeholder="03.03.2018" />
+        </label>
+        <label for="dpsh">
+               <span>Data e publikimit t&euml; shpalljes</span>
+               <input id="dpsh" class="form-control" type="text" placeholder="03.03.2018" />
+        </label>
+
+        <br>
+
+        <label for="d.n.k">Data e n&euml;nshkrmit t&euml; kontrat&euml;s
+        </label>
+
+        <br>
+
+          <input id="d.n.k" class="form-control by" type="text" placeholder="03.03.2018">
+        <label for="apik">
+              <span>Afatet p&euml;r implementimin e kontrat&euml;s</span>
+              <input id="apik" class="form-control" type="text" placeholder="03.03.2018" />
+        </label>
+        <label for="date">
+              <input id="date" class="form-control" type="text" placeholder="03.03.2018" />
+        </label>
+        <br>
+        <label for="d.p.k">Data e p&euml;rmbylljes s&euml; kontrat&euml;s(data e pranimit t&euml; p&euml;rkohshem / preliminar) </label>
+            
+            <input id="d.p.k" class="form-control by" type="text" placeholder="03.03.2018">
+            
+        <br>
+
+        <h4><strong>&Ccedil;mimi dhe t&euml; dh&euml;nat e tjera:</strong></h4>
+
+        <label for="shk">
+               <span>Shuma e kontrat&euml;s(duke p&euml;rfshir&euml; t&euml; gjitha kushtet)</span>
+               <input id="shk" class="form-control" type="text" placeholder="&Ccedil;mimi i kontrat&euml;s" />
+        </label>
+        <label for="shtpk">
+               <span>Shuma totale e paguar p&euml;r kontrat&euml;n</span>
+               <input id="shtpk" class="form-control" type="text" placeholder="&Ccedil;mimi total" />
+        </label>
+
+        <br>
+
+        <label for="e.k">Emri i kontraktuesit  </label>
+            
+            <input id="e.k" class="form-control by" type="text" placeholder="Emri dhe Mbiemri">
+
+        <br>
+
+        <h4><strong>T&euml; dh&euml;na t&euml; detajuara:</strong></h4>
+
+        <div class="input-group mb-3">
+  			<select class="custom-select" id="inputGroupSelect02">
+	   			<option selected>Lloji i kontrat&euml;s:</option>
+	    		<option value="k.sh">Kontrata e shitblerjes</option>
+	    		<option value="k.q">Kontrata e qiras&euml;</option>
+	    		<option value="k.v">Kontrata mbi vepr&euml;n</option>
+	    		<option value="k.o">Kontrata e ortak&euml;ris&euml;</option>
+           </select>
+        </div> 
+
+        <div class="input-group mb-3">
+  			<select class="custom-select" id="inputGroupSelect02">
+	   			<option selected>Gjendja e kontrat&euml;s:</option>
+	    		<option value="1">E p&euml;rfunduar</option>
+	    		<option value="2">E pap&euml;rfunduar</option>
+           </select>
+        </div>   
+
+        <h5>Shpjegim:</h5> 
+
+        <textarea rows="2.5" cols="60" class="shpjegim" placeholder="Jep nj&euml; shpjegim t&euml; shkurt&euml;r rreth kontrat&euml;s apo detaje t&euml; cilat nuk jan&euml; t&euml; p&euml;rmendura m&euml; sip&euml;r."></textarea>
+        <br>
+  
+        <br>
+
+        <button type="button" class="btn btn-primary btn-lg dergo"><span>D&Euml;RGO</span></button>
+
+        <button type="button" class="btn btn-primary btn-lg back" ><span>FSHIJ</span></button>  
+
+
+         
+      
+      </form>
+
+    </div>
+   
+</body>
+</html>

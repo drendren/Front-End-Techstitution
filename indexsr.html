@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <style type="text/css">
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            width: 100%;
+            border: 1px solid white;
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 700px;
+        }
+
+         label { 
+            width: 46%; 
+            float: center; 
+            margin: 0 20px 0 0;
+            padding:  0.2em;
+            word-wrap: break-word;
+         }
+
+         span { 
+            display: block; 
+            margin: 1px 0 4px; 
+            padding-right: 5px
+
+        }
+         input { 
+
+            width: 46%; 
+            border: 1px solid #000;
+            padding: 5px; 
+
+         }
+
+         h1  {
+              color: #005ce6;
+         }
+
+          .by {
+            width: 95.5%
+          }
+
+          .nice {
+            padding: 14px 40px;
+            width: 250px;
+          }
+
+      .dergo {
+        display: inline-block;
+        border-radius: 12px;
+        background-color: #1a75ff;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 20px;
+        padding: 10px;
+        width: 290px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      
+
+      }
+
+        .dergo span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+
+        .dergo span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+        }
+
+        .dergo:hover span {
+          padding-right: 25px;
+        }
+
+        .dergo:hover span:after {
+          opacity: 1;
+          right: 0;
+        }
+
+        .back {
+          display: inline-block;
+          border-radius: 12px;
+          background-color: grey;
+          border: none;
+          color: #FFFFFF;
+          text-align: center;
+          font-size: 20px;
+          padding: 10px;
+          width: 290px;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 5px;
+        }
+
+        .back:hover {
+          background: grey;
+        }
+        .back span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+        .back span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          left: -20px;
+          transition: 0.5s;
+        }
+
+        .back:hover span {
+          padding-left: 25px;
+        }
+
+        .back:hover span:after {
+          opacity: 1;
+          left: 0;
+        }
+
+          .mb-3 {
+         
+          padding-right: 55%
+        }
+
+        h4 {
+          margin-top: 3%;
+          margin-bottom: 3%;
+          color: #434344;
+        }
+
+        h5 {
+          margin-top: 3%;
+          margin-bottom: 3%;
+          color: #434344;
+
+        }
+
+        .shpjegim {
+          text-align: center;
+          padding: 2%;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+    </style>
+</head>
+<body>
+
+   <div class="container">
+
+        <form>
+
+          <h1>Dodajte novi ugovor</h1>
+
+          <h4><strong>Nabavke:</strong></h4>
+
+          <label for="nr.p">
+               <span>Redni broj tu&#382;ila&#353;tva</span>
+               <input id="nr.p" class="form-control bby" type="text" placeholder="Redni broj tu&#382;ila&#353;tva" />
+         </label>
+         <label for="ll.p">
+               <span>Vrsta krivi&#269;nog gonjenja</span>
+               <input id="ll.p" class="form-control" type="text" placeholder="Vrsta krivi&#269;nog gonjenja" />
+         </label>
+
+         <br>
+
+        <label for="ap">Aktivnost nabavke</label>
+        <input  id="ap"  class="form-control by" type="text" placeholder="Aktivnost nabavke" />
+
+        <br>
+
+    
+         <h4><strong>Datumi:</strong></h4>
+
+         <label for="diap">
+               <span>Datum po&#269;etka aktivnosti nabavke</span>
+               <input id="diap" class="form-control" type="text" placeholder="03.03.2018" />
+         </label>
+         <label for="dpsh">
+               <span>Datum objavljivanja oglasa</span>
+               <input id="dpsh" class="form-control" type="text" placeholder="03.03.2018" />
+         </label>
+
+         <br>
+
+        <label for="d.n.k">Datum potpisivanja ugovora</label>
+
+        <br>
+
+          <input id="d.n.k" class="form-control by" type="text" placeholder="03.03.2018">
+       <label for="apik">
+              <span>Rokovi za sprovo&#273;enje ugovora</span>
+              <input id="apik" class="form-control" type="text" placeholder="03.03.2018" />
+       </label>
+       <label for="date">
+              <input id="date" class="form-control" type="text" placeholder="03.03.2018" />
+       </label><br>
+       <label for="d.p.k">Datum zavr&#353;etka ugovora (datum privremenog / preliminarnog prijema)</label>
+            <input id="d.p.k" class="form-control by" type="text" placeholder="03.03.2018">
+            <br>
+
+          <h4><strong>Cena i ostali podaci:</strong></h4>
+
+
+        <label for="shk">
+               <span>Iznos ugovora (uklju&#269;uju&#263;i sve uslove)</span>
+               <input id="shk" class="form-control" type="text" placeholder="Iznos ugovora" />
+         </label>
+         <label for="shtpk">
+               <span>Ukupan iznos pla&#263;en za ugovor</span>
+               <input id="shtpk" class="form-control" type="text" placeholder="Ukupan iznos" />
+        </label>
+
+        <label for="e.k">Naziv izvo&#273;a&#269;a radova</label>
+            <input id="e.k" class="form-control by" type="text" placeholder="Ime i prezime"> <br>
+      
+
+         <h4><strong>Detaljnije informacije:</strong></h4>
+
+        <div class="input-group mb-3">
+        <select class="custom-select" id="inputGroupSelect02">
+          <option selected>Vrsta ugovora:</option>
+          <option value="k.sh">Ugovor o prodaji</option>
+          <option value="k.q">Ugovor o zakupu</option>
+          <option value="k.v">Ugovor o radu</option>
+          <option value="k.o">Ugovor o partnerstvu</option>
+           </select>
+        </div> 
+
+        <div class="input-group mb-3">
+        <select class="custom-select" id="inputGroupSelect02">
+          <option selected>Status ugovora:</option>
+          <option value="1">Zavr&scaron;eno</option>
+          <option value="2">Nedovr&scaron;eno</option>
+           </select>
+        </div>   
+
+        <h5>Obja&scaron;njenje:</h5> 
+
+        <textarea rows="2.5" cols="60" class="shpjegim" placeholder="Daje kratko obja&scaron;njenje ugovora ili detalja koji nisu navedeni gore"></textarea>
+        <br>
+  
+        <br>
+
+
+
+
+          <button type="button" class="btn btn-primary btn-lg dergo"><span>PO&#352;ALJI</span></button>
+
+            <button type="button" class="btn btn-primary btn-lg back" ><span>OBRI&#352;I</span></button>  
+          </div>
+      </form>
+
+    </div>
+    <script>
+    function clearField(){
+      
+    document.getElementById("e.k").value = "";
+    document.getElementById("shtpk").value ="";
+    document.getElementById("shk").value ="";
+    }
+    </script>
+</body>
+</html>
